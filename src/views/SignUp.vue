@@ -32,13 +32,13 @@
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="button" name="signup" id="signup" class="form-submit" value="Register" v-on:click="register()"/>
+                                <input type="button" name="signup" id="signup" class="form-submit" value="Register" @click="register()"/>
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
                         <figure><img src="../assets/images/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
+                        <router-link to="/sign-in">I am already member</router-link>
                     </div>
                 </div>
             </div>
@@ -51,6 +51,7 @@ import axios from 'axios'
 
 export default {
   name: 'SignUp',
+  path: '/signup',
   components: {
    
   },
