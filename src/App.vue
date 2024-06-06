@@ -1,16 +1,23 @@
 <template>
+  <HeaderTemplate />
+  <SideBar :menu_options="menu_array"/>
   <main>
     <router-view></router-view>
   </main>
 </template>
 <script>
+// import HelloWorld from './components/HelloWorld.vue'
+// import HomePage from './components/HomePage.vue'
+import SideBar from './components/SideBar.vue'
+import HeaderTemplate from './components/HeaderTemplate.vue'
 
 import "./assets/css/style.css";
 
 export default {
   name: 'App',
   components: {
-    
+     SideBar,
+    HeaderTemplate,
   },
   data() {
     return {
